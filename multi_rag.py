@@ -17,7 +17,7 @@ from langchain.vectorstores import FAISS
 from langchain_core.messages import HumanMessage
 
 # Set up the environment
-os.environ['GOOGLE_API_KEY'] = 'api-key-google'
+os.environ['GOOGLE_API_KEY'] = 'AIzaSyDGW21LahzjRceL-7GSti5gr5jBhP0MKk4'
 
 # Initialize models
 llm = ChatGoogleGenerativeAI(model='gemini-1.5-pro')
@@ -36,7 +36,6 @@ app_mode = st.sidebar.selectbox("Choose the functionality",
                                  "📄 Chat with PDF"]
                                 )
 
-<<<<<<< HEAD
 # Custom CSS to push logo and link to the bottom
 st.markdown(
     """
@@ -55,8 +54,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-=======
->>>>>>> 284bd2bcd29066b08c6cb0db3dff8a9646e426cd
 st.sidebar.title("\n\n\n")
 logo = "https://i.postimg.cc/yddLX0NY/gep1.png"
 st.sidebar.image(logo)
