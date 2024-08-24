@@ -22,19 +22,6 @@ os.environ['GOOGLE_API_KEY'] = 'AIzaSyDGW21LahzjRceL-7GSti5gr5jBhP0MKk4'
 # Initialize models
 llm = ChatGoogleGenerativeAI(model='gemini-1.5-pro')
 
-# Customize the sidebar
-markdown = """
-Web App URL: <https://saadfrh-esa-landcover.streamlit.app/>
-GitHub Repository: <https://github.com/farah1902/ESA_LandCover_Streamlit>
-"""
-
-st.sidebar.title("About")
-st.sidebar.info(markdown)
-logo = "https://i.postimg.cc/yddLX0NY/gep1.png"
-st.sidebar.image(logo)
-
-personal_link = "Developed by [Saad Farah](https://saadfrh.github.io/)"
-st.sidebar.markdown(personal_link)
 
 # Set up the Streamlit app
 st.set_page_config(page_title="Multi-Function Chat App", page_icon="🌐", layout="wide")
@@ -48,6 +35,13 @@ app_mode = st.sidebar.selectbox("Choose the functionality",
                                  "🖼️ Image Analysis", 
                                  "📄 Chat with PDF"]
                                 )
+
+st.sidebar.title("About")
+logo = "https://i.postimg.cc/yddLX0NY/gep1.png"
+st.sidebar.image(logo)
+
+personal_link = "Developed by [Saad Farah](https://saadfrh.github.io/)"
+st.sidebar.markdown(personal_link)
 
 # Define the system template for answering questions
 system_template = """Use the following pieces of context to answer the user's question. 
