@@ -36,7 +36,25 @@ app_mode = st.sidebar.selectbox("Choose the functionality",
                                  "📄 Chat with PDF"]
                                 )
 
-st.sidebar.title("About")
+# Custom CSS to push logo and link to the bottom
+st.markdown(
+    """
+    <style>
+    /* Style to push content to the bottom of the sidebar */
+    .sidebar .sidebar-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .sidebar .sidebar-content > div:last-child {
+        margin-top: auto;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.sidebar.title("\n\n\n")
 logo = "https://i.postimg.cc/yddLX0NY/gep1.png"
 st.sidebar.image(logo)
 
