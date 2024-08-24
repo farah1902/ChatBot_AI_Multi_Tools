@@ -36,7 +36,7 @@ app_mode = st.sidebar.selectbox("Choose the functionality",
                                  "📄 Chat with PDF"]
                                 )
 
-st.sidebar.title("About")
+st.sidebar.title("\n\n\n")
 logo = "https://i.postimg.cc/yddLX0NY/gep1.png"
 st.sidebar.image(logo)
 
