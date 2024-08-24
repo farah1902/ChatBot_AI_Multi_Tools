@@ -17,7 +17,7 @@ from langchain.vectorstores import FAISS
 from langchain_core.messages import HumanMessage
 
 # Set up the environment
-os.environ['GOOGLE_API_KEY'] = 'AIzaSyDGW21LahzjRceL-7GSti5gr5jBhP0MKk4'
+os.environ['GOOGLE_API_KEY'] = 'api-key-google'
 
 # Initialize models
 llm = ChatGoogleGenerativeAI(model='gemini-1.5-pro')
