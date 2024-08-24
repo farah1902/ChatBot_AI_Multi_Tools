@@ -121,7 +121,7 @@ def main():
         llm = ChatGoogleGenerativeAI(model='gemini-1.5-pro')
         speech = st.text_area("✏️ Input your speech")
         uploaded_file = st.file_uploader("Or upload a PDF file", type="pdf")
-        language = st.selectbox("🌍 Select Language", ["Urdu", "Spanish", "French", "German", "Chinese","Hindi"])
+        language = st.selectbox("🌍 Select Language", ["French", "Urdu", "Spanish", "German", "Chinese","Hindi"])
 
         if st.button("Translate"):
             with st.spinner("Translating... 🔄"):
